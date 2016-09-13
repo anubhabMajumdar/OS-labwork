@@ -1,0 +1,41 @@
+Any drive contains 4 parts(or blocks):
+	1. Superblock
+	2. Inode array list
+	3. Bitvector
+	4. Data block list
+	
+Superblock
+--------------
+Partition name = 1 bytes
+Partition_size = (4+1) bytes	
+Block size = 4 bytes
+Number of Inode = 4 bytes
+Inode size = 4 bytes
+Starting data block address = 4 bytes
+Block table size = 4 bytes
+Block table pointer = 4 bytes
+Number of files = 4 bytes
+
+Inode
+---------------
+Flag = 1 bytes
+Filename = 15 bytes
+Filesize = 4 bytes
+Date = 8 bytes
+Time = 8 bytes
+Start ---> array of 64 X 4 bytes
+
+Bitvector
+---------------
+array of 64 x Number of inodes bytes
+
+
+
+
+
+
+
+
+
+
+

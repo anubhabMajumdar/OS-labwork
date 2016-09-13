@@ -1,0 +1,2299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb"><head>
+	  <!-- base href="http://www.becs.ac.in/cs-manas-teaching/1840-cs-manas-oslab" -->
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Bengal Engineering">
+  <meta name="title" content="Operating System Laboratory">
+  <meta name="author" content="Manas Hira">
+  <meta name="description" content="Bengal Engineering and Science University, Shibpur (Erstwhile Bengal Engineering College, Shibpur and Bengal Engineering College (Deemed University))">
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management">
+  <title>Operating System Laboratory</title>
+  <link href="http://www.becs.ac.in/templates/rt_crystalline_j15/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="Operating%20System%20Laboratory_files/jcemediabox.css" type="text/css">
+  <link rel="stylesheet" href="Operating%20System%20Laboratory_files/style.css" type="text/css">
+  <link rel="stylesheet" href="Operating%20System%20Laboratory_files/css-cb23d447b66359d91b66e4dead744074.css" type="text/css">
+  <link rel="stylesheet" href="Operating%20System%20Laboratory_files/css-26b31a3df52ba59bbfb4be23dcbfee1e.css" type="text/css">
+  <link rel="stylesheet" href="Operating%20System%20Laboratory_files/css-23c5ded2b96b25abde0b9669bcffd03e.css" type="text/css">
+  <link rel="stylesheet" href="Operating%20System%20Laboratory_files/rokajaxsearch.css" type="text/css">
+  <link rel="stylesheet" href="Operating%20System%20Laboratory_files/rokajaxsearch-theme.css" type="text/css">
+  <style type="text/css">
+    <!--
+span.tooltips-link { border-bottom: 1px dashed #CCCCCC; }
+div.tooltips-tip, div.tooltips-tip.tool-tip, div.tooltips-tip-tip { z-index: 200 }
+div.tooltips-tip div.tip, div.tooltips-tip-tip > div { background-color: #F6F6FF; border-color: #CCCCCC; border-width: 2px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; max-width: 400px; }
+#rt-main-surround, #rt-variation .bg3 .module-content, #rt-variation .title3 .module-title {background:#f1e8d6;}
+#rt-variation .bg3, #rt-variation .bg3 .title, #rt-variation .title3 .title, #rt-variation .bg3 ul.menu li > a:hover, #rt-variation .bg3 ul.menu li.active > a {color:#55473e;}
+#rt-variation .bg3 a, #rt-variation .bg3 .title span, #rt-variation .bg3 .button, #rt-variation .title3 .title span {color:#000000;}
+#rt-main-header, .menutop ul, .menutop .drop-top, #rt-variation .bg1 .module-content, #rt-variation .title1 .module-title {background:#004e63;}
+#rt-main-header, #rt-main-header .title, #rt-header, #rt-main-header .menutop li > .item, .menutop ul li .item, #rt-variation .bg1, #rt-variation .bg1 .title, #rt-variation .title1 .title, #rt-variation .bg1 ul.menu li > a:hover, #rt-variation .bg1 ul.menu li.active > a {color:#ffffff;}
+#rt-main-header a, #rt-main-header .title span, #rt-variation .bg1 a, #rt-variation .bg1 .title span, #rt-variation .bg1 .button, #rt-variation .title1 .title span {color:#ebe5c3;}
+#rt-feature, #rt-utility, #roksearch_results, #roksearch_results .rokajaxsearch-overlay, #rt-variation .bg2 .module-content, #rt-variation .title2 .module-title {background:#dedede;}
+#rt-feature, #rt-feature .title, #rt-utility, #rt-utility .title, #roksearch_results, #roksearch_results span, #rt-variation .bg2, #rt-variation .bg2 .title, #rt-variation .title2 .title, #rt-variation .bg2 ul.menu li > a:hover, #rt-variation .bg2 ul.menu li.active > a {color:#444444;}
+#rt-feature a, #rt-utility a, #rt-feature .title span, #rt-utility .title span, #roksearch_results a, #roksearch_results h3, #rt-variation .bg2 a, #rt-variation .bg2 .title span, #rt-variation .bg2 .button, #rt-variation .title2 .title span {color:#004e63;}
+#rt-mainbody-bg, #rt-variation .bg4 .module-content, #rt-variation .title4 .module-title {background:#ffffff;}
+#rt-mainbody-bg, #rt-mainbody-bg .title, #rt-mainbody-bg .rt-article-title, #rt-mainbody-bg ul.menu li > a:hover, #rt-mainbody-bg ul.menu li.active > a, #rt-variation .bg4, #rt-variation .bg4 .title, #rt-variation .title4 .title, #rt-variation .bg4 ul.menu li > a:hover, #rt-variation .bg4 ul.menu li.active > a {color:#020a49;}
+#rt-mainbody-bg a, #rt-mainbody-bg .title span, #rt-mainbody-bg .rt-article-title span, #rt-variation .bg4 a, #rt-variation .bg4 .title span, #rt-variation .bg4 .button, #rt-variation .title4 .title span {color:#022a73;}
+#rt-bottom, #rt-main-footer, #rt-variation .bg5 .module-content, #rt-variation .title5 .module-title {background:#a61027;}
+#rt-bottom, #rt-bottom .title, #rt-footer, #rt-footer .title, #rt-copyright, #rt-copyright .title, #rt-debug, #rt-debug .title, #rt-variation .bg5, #rt-variation .bg5 .title, #rt-variation .title5 .title, #rt-variation .bg5 ul.menu li > a:hover, #rt-variation .bg5 ul.menu li.active > a {color:#ffffff;}
+#rt-bottom a, #rt-bottom .title span, #rt-footer a, #rt-footer .title span, #rt-copyright a, #rt-copyright .title span, #rt-debug a, #rt-debug .title span, #rt-variation .bg5 a, #rt-variation .bg5 .title span, #rt-variation .bg5 .button, #rt-variation .title5 .title span {color:#ebe5c3;}
+
+    -->
+  </style>
+  <script type="text/javascript" src="Operating%20System%20Laboratory_files/mootools.js"></script>
+  <script type="text/javascript" src="Operating%20System%20Laboratory_files/caption.js"></script>
+  <script type="text/javascript" src="Operating%20System%20Laboratory_files/phocagalleryslideshow.js"></script>
+  <script type="text/javascript" src="Operating%20System%20Laboratory_files/jcemediabox.js"></script>
+  <script type="text/javascript" src="Operating%20System%20Laboratory_files/js-fc772c3fa2dbea9155117813febfbe0e.js"></script>
+  <script type="text/javascript" src="Operating%20System%20Laboratory_files/rokajaxsearch.js"></script>
+  <script type="text/javascript">
+JCEMediaObject.init('/', {flash:"10,0,22,87",windowmedia:"5,1,52,701",quicktime:"6,0,2,0",realmedia:"7,0,0,0",shockwave:"8,5,1,0"});JCEMediaBox.init({popup:{width:"",height:"",legacy:0,lightbox:0,shadowbox:0,resize:1,icons:1,overlay:1,overlayopacity:0.8,overlaycolor:"#000000",fadespeed:500,scalespeed:500,hideobjects:1,scrolling:"fixed",close:2,labels:{'close':'Close','next':'Next','previous':'Previous','cancel':'Cancel','numbers':'{$current} of {$total}'}},tooltip:{className:"tooltip",opacity:0.8,speed:150,position:"br",offsets:{x: 16, y: 16}},base:"/",imgpath:"plugins/system/jcemediabox/img",theme:"standard",themecustom:"",themepath:"plugins/system/jcemediabox/themes"});
+		window.addEvent('domready', function(){ var JTooltips = new Tips($$('.tooltips-link'), { maxTitleChars: 50, showDelay: 100, hideDelay: 100, className: 'tooltips-tip', fixed: false}); });
+		window.addEvent('domready', function(){ var JTooltips = new Tips($$('.tooltips-link-img'), { maxTitleChars: 50, showDelay: 100, hideDelay: 100, className: 'tooltips-img tooltips-tip', fixed: false, onShow: function(tip){
+				if ( tip.getElement('div.tip') ) {
+					tip.setStyle('display','block');tip.getElement('div.tip').setStyle('max-width',tip.getElement('img').getStyle('width'));
+				} else {
+					tip.setStyle('visibility','visible');tip.getChildren()[0].setStyle('max-width',tip.getElement('img').getStyle('width'));
+				}
+			}}); });
+InputsExclusion.push('.content_vote','#rt-popup')
+		        window.addEvent('load', function() {
+					new Fusion('ul.menutop', {
+						pill: 1,
+						effect: 'slide and fade',
+						opacity: 1,
+						hideDelay: 500,
+						centered: 0,
+						tweakInitial: {'x': 0, 'y': -1},
+        				tweakSubsequent: {'x': 1, 'y': -1},
+						menuFx: {duration: 200, transition: Fx.Transitions.Sine.easeOut},
+						pillFx: {duration: 250, transition: Fx.Transitions.Sine.easeOut}
+					});
+	            });
+window.addEvent((window.webkit) ? 'load' : 'domready', function() {
+				window.rokajaxsearch = new RokAjaxSearch({
+					'results': ' Results',
+					'close': '',
+					'websearch': 0,
+					'blogsearch': 0,
+					'imagesearch': 0,
+					'videosearch': 0,
+					'imagesize': 'MEDIUM',
+					'safesearch': 'MODERATE',
+					'search': ' Search...',
+					'readmore': ' Read more...',
+					'noresults': ' No results',
+					'advsearch': ' Advanced search',
+					'page': ' Page',
+					'page_of': ' of',
+					'searchlink': 'http://www.becs.ac.in/index.php?option=com_search&amp;view=search&amp;tmpl=component',
+					'advsearchlink': 'http://www.becs.ac.in/index.php?option=com_search&amp;view=search',
+					'uribase': 'http://www.becs.ac.in/',
+					'limit': '20',
+					'perpage': '10',
+					'ordering': 'newest',
+					'phrase': 'any',
+					'hidedivs': '',
+					'includelink': 1,
+					'viewall': ' View all results',
+					'estimated': ' estimated',
+					'showestimated': 1,
+					'showpagination': 1,
+					'showcategory': 1,
+					'showreadmore': 1,
+					'showdescription': 1
+				});
+			});
+  </script>
+</head>
+	<body id="rt-variation" class="font-family-helvetica font-size-is-small menu-type-fusionmenu col12 menu-cs-manas-teaching -coresettings,-presets,-layouts option-com-content view-article layout-default">
+				<div id="rt-main-header" class="header-shadows-dark"><div id="rt-header-overlay" class="header-overlay-lines-4"><div id="rt-main-header2"><div id="rt-header-graphic" class="header-graphic-header-1">
+									<div id="rt-header">
+				<div class="rt-container">
+					<div class="shadow-left"><div class="shadow-right"><div class="shadow-bottom">
+						<div class="rt-grid-4 rt-alpha">
+    			<div class="rt-block">
+    	    	<a href="http://www.becs.ac.in/" id="rt-logo"></a>
+    		</div>
+	    
+</div>
+<div class="rt-grid-4">
+    		<div class="date-block">
+			<span class="date">Thu, Aug 08, 2013</span>
+		</div>
+		
+</div>
+<div class="rt-grid-4 rt-omega">
+                        <div class="rt-block">
+				<div class="module-content">
+					<div class="module-tm"><div class="module-tl"><div class="module-tr"></div></div></div>
+					<div class="module-l"><div class="module-r">
+	                							<div class="module-inner">
+														<div class="module-inner3">
+									                		<form name="rokajaxsearch" id="rokajaxsearch" class="light" action="http://www.becs.ac.in/" method="get">
+<div class="rokajaxsearch ">
+	<div class="roksearch-wrapper">
+		<input autocomplete="off" id="roksearch_search_str" name="searchword" class="inputbox" value=" Search..." type="text">
+	</div>
+	<input name="searchphrase" value="any" type="hidden">
+	<input name="limit" value="20" type="hidden">
+	<input name="ordering" value="newest" type="hidden">
+	<input name="view" value="search" type="hidden">
+	<input name="Itemid" value="99999999" type="hidden">
+	<input name="option" value="com_search" type="hidden">
+
+	
+	
+</div>
+<div id="rokajaxsearch_tmp" style="visibility:hidden;display:none;"></div>
+</form>							</div>
+						</div>
+					</div></div>
+					<div class="module-bm"><div class="module-bl"><div class="module-br"></div></div></div>
+				</div>
+            </div>
+        	
+</div>
+						<div class="clear"></div>
+					</div></div></div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+									<div id="rt-navigation"><div id="rt-navigation2"><div id="rt-navigation3">
+				<div class="rt-container">
+					<div class="shadow-left"><div class="shadow-right">
+						
+	<ul class="header-shadows-dark menutop level1 ">
+						<li class="item1 root">
+					<a id="a-1375972992213696" class="orphan item bullet" href="http://www.becs.ac.in/">
+				<span>
+			    				Home				   
+				</span>
+			</a>
+			
+			
+	</li>	
+							<li class="item142 parent root f-main-parent">
+					<a id="a-1375972992214597" class="daddy item bullet" href="http://www.becs.ac.in/university">
+				<span>
+			    				University				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+							<li class="item137 parent root f-main-parent">
+					<a id="a-1375972992226181" class="daddy item bullet" href="http://www.becs.ac.in/">
+				<span>
+			    				Academics				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+							<li class="item138 parent root f-main-parent">
+					<a id="a-137597299242197" class="daddy item bullet" href="http://www.becs.ac.in/admissionmainmenuitem">
+				<span>
+			    				Admission				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+							<li class="item131 root">
+					<a id="a-1375972992423869" class="orphan item bullet" href="http://www.becs.ac.in/events">
+				<span>
+			    				Events				   
+				</span>
+			</a>
+			
+			
+	</li>	
+							<li class="item145 parent root f-main-parent">
+					<a id="a-1375972992424117" class="daddy item bullet" href="http://www.becs.ac.in/notice">
+				<span>
+			    				Notification				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+							<li class="item67 parent root f-main-parent">
+					<a id="a-1375972992426103" class="daddy item bullet" href="http://www.becs.ac.in/download">
+				<span>
+			    				Download				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+							<li class="item506 root">
+					<a id="a-1375972992433919" class="orphan item bullet" href="http://www.becs.ac.in/universitygallerymenuitem">
+				<span>
+			    				Gallery				   
+				</span>
+			</a>
+			
+			
+	</li>	
+							<li class="item384 root">
+					<a id="a-1375972992433821" class="orphan item bullet" href="http://www.becs.ac.in/besucommunity">
+				<span>
+			    				Community				   
+				</span>
+			</a>
+			
+			
+	</li>	
+				</ul>
+
+					    <div style="display: none;" class="fusion-pill-l"><div class="fusion-pill-r"></div></div><div class="clear"></div>
+					</div></div>
+				</div>
+			</div></div></div>
+									<div id="rt-showcase"><div id="rt-showcase2">
+				<div class="rt-container">
+					<div class="shadow-left"><div class="shadow-right"><div class="shadow-bl"><div class="shadow-br">
+												<div class="clear"></div>
+					</div></div></div></div>
+				</div>
+			</div></div>
+					</div></div></div></div>
+		<div id="rt-main-surround"><div id="rt-main-overlay" class="main-overlay-circles"><div id="rt-main-surround2" class="main-shadows-light">
+			<div class="rt-container">
+				<div class="shadow-left"><div class="shadow-right">
+					
+										<div id="rt-mainbody-bg" class="body-shadows-light"><div id="rt-body-overlay" class="body-overlay-none">
+						<div id="rt-mainbody-shadow">
+							<div id="body-inner-l"><div id="body-inner-r">
+																															              <div id="rt-main" class="mb9-sa3">
+                <div class="rt-main-inner">
+                    <div class="rt-grid-9 ">
+                                                <div class="rt-block">
+                                                        <div id="rt-mainbody">
+                                
+<div class="rt-joomla ">
+	
+	<div class="rt-article">
+							<div class="module-content">
+					<div class="module-tm"><div class="module-tl"><div class="module-tr"></div></div></div>
+					<div class="module-l"><div class="module-r">				
+								<div class="rt-headline"><div class="module-title"><div class="module-title2"><h1 class="title"><a href="http://www.becs.ac.in/cs-manas-teaching/1840-cs-manas-oslab">Operating System Laboratory</a></h1>				</div></div></div>
+				<div class="clear"></div>
+								<div class="module-inner"><div class="module-inner2">
+						
+					
+								<div class="rt-articleinfo">
+										<div class="rt-article-icons">
+												<a href="http://www.becs.ac.in/cs-manas-teaching/1840-cs-manas-oslab?format=pdf" title="PDF" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><span class="icon pdf"></span></a><a href="http://www.becs.ac.in/cs-manas-teaching/1840-cs-manas-oslab?tmpl=component&amp;print=1&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><span class="icon print"></span></a><a href="http://www.becs.ac.in/component/mailto/?tmpl=component&amp;link=aHR0cDovL3d3dy5iZWNzLmFjLmluL2NzLW1hbmFzLXRlYWNoaW5nLzE4NDAtY3MtbWFuYXMtb3NsYWI%3D" title="E-mail" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><span class="icon email"></span></a>																								</div>
+							
+							
+							
+								
+									</div>
+						
+						
+				<h4>Operating System Laboratory</h4>
+<p>Assignments</p>
+<ol>
+<li style="text-align: justify;">Write a program that creates another 
+process and together (two processes together) print the first n (n given
+ by the user)&nbsp;Fibonacci numbers. The first (parent) process prints 
+first C (given by the user) fibonacci numbers and the second (child) 
+process prints the rest. Extend this program so that it creates P (given
+ by the user) processes and these P processes together print the first n
+ (given by the user) Fibonacci numbers.</li>
+<li style="text-align: justify;">A process<strong> P</strong> goes on collecting "<strong>tasks</strong>" from the user (either through key-board or file) and add them to a queue <strong>Q</strong>.
+ For example, a task could be just computation of factorial of a 
+positive integer and P could just read sequence of such numbers. There 
+are&nbsp; <strong>n</strong> other processes (<strong>p<sub>1</sub>, p<sub>2</sub>, ..., p<sub>n</sub></strong>). which will actually execute the "<strong>tasks</strong>" collected by <strong>P</strong>. There is one array <strong>T</strong> of <strong>n</strong> structures (one structure for each <strong>p<sub>i</sub></strong>, representing the task <strong>p<sub>i</sub></strong> handles) and <strong>P</strong> assigns tasks to these <strong>n</strong> processes through this <strong>T</strong>. <strong>T[i]</strong>, therefore, is to hold all the information of a task (what the task is, its status, result, etc.) that <strong>p<sub>i</sub> </strong>handles. You have to decide the exact structure for <strong>T[i]</strong>, that is, the elements of <strong>T</strong>. Since T is accessed by <strong>P</strong> as well as all <strong>p<sub>i</sub></strong>s, it is conceived as a shared data structure. Whenever there is no pending task for <strong>p</strong><sub>i</sub>, <strong>P</strong> dequeues a task from <strong>Q</strong> and assigns that to <strong>p<sub>i</sub></strong>. If there is no pending task in <strong>Q</strong>, <strong>P</strong> "tells" <strong>p<sub>i</sub></strong> to terminate. Each <strong>p<sub>i</sub></strong>, <strong>i</strong> = <strong>1</strong> to <strong>n</strong>, checks whether there is any pending task in <strong>T[i]</strong> or not. If yes, <strong>p</strong><sub>i</sub> executes that and puts back the result in <strong>T[i]</strong>. <strong>p<sub>i</sub></strong> terminates when it finds that<strong> P</strong> has "instructed" it (indeed through <strong>T[i]</strong>)
+ to terminate. When P finds that T[i] contains the result of the task, 
+that is, pi had executed the task and has put the result in T[i], P 
+prints the result and marks that pi is free (no pending task, can accept
+ new task). Whenevr Q is not full, P collects one task from the user and
+ adds that to Q. P terminates when all <strong>p<sub>i</sub></strong>s 
+have terminated. The above is illustrated in the following schematic 
+diagram. Please consult the online manual pages for fork(2), shmget(2), 
+shmat(2), shmctl(2) and related ones.</li>
+</ol>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" alt="OS Asgnmnt II July 22 2013" src="Operating%20System%20Laboratory_files/os_ex2_20130722.png" height="255" width="612"></p>
+
+		
+												</div></div>
+			</div></div>
+			<div class="module-bm"><div class="module-bl"><div class="module-br"></div></div></div>
+		</div>
+	</div>
+</div>
+                            </div>
+                                                    </div>
+                                            </div>
+                                <div class="rt-grid-3">
+                <div id="rt-sidebar-a">
+                                        <div class="rt-block">
+				<div class="module-content">
+					<div class="module-tm"><div class="module-tl"><div class="module-tr"></div></div></div>
+					<div class="module-l"><div class="module-r">
+	                							<div class="module-title"><div class="module-title2"><h2 class="title">Manas Hira</h2></div></div>
+		                						<div class="module-inner">
+														<div class="module-inner2">
+									                		<ul class="menu"><li id="current" class="active item948"><a href="http://www.becs.ac.in/cs-manas"><span>About</span></a></li><li class="item950"><a href="http://www.becs.ac.in/cs-manas-teaching"><span>Teaching</span></a></li><li class="item954"><a href="http://www.becs.ac.in/cs-manas-album"><span>Album</span></a></li></ul>							</div>
+						</div>
+					</div></div>
+					<div class="module-bm"><div class="module-bl"><div class="module-br"></div></div></div>
+				</div>
+            </div>
+        	                    <div class="rt-block">
+				<div class="module-content">
+					<div class="module-tm"><div class="module-tl"><div class="module-tr"></div></div></div>
+					<div class="module-l"><div class="module-r">
+	                							<div class="module-title"><div class="module-title2"><h2 class="title">CST Department</h2></div></div>
+		                						<div class="module-inner">
+														<div class="module-inner2">
+									                		<ul class="menu"><li class="item476"><a href="http://www.becs.ac.in/cstfacultymembers"><span>Faculty Members</span></a></li><li class="item600"><a href="http://www.becs.ac.in/cstdegreeprogrammesmenuitem"><span>Programmes</span></a></li><li class="item575"><a href="http://www.becs.ac.in/cstugcurriculumcstmenuitem"><span>UG Curriculum</span></a></li><li class="item705"><a href="http://www.becs.ac.in/technical-assistant-cst-submenu"><span>Technical Assistant</span></a></li><li class="item706"><a href="http://www.becs.ac.in/students-cst-submenu"><span>Students</span></a></li><li id="current" class="active item707"><a href="http://www.becs.ac.in/society-cst-submenu"><span>Society</span></a></li><li class="item708"><a href="http://www.becs.ac.in/facilities-cst-submenu"><span>Facilities</span></a></li><li class="item709"><a href="http://www.becs.ac.in/research-cst-submenu"><span>Research and Development</span></a></li><li class="item710"><a href="http://www.becs.ac.in/exteacher-cst-submenu"><span>Ex-Teacher</span></a></li><li class="item2359"><a href="http://www.becs.ac.in/cstalbum"><span>Album</span></a></li></ul>							</div>
+						</div>
+					</div></div>
+					<div class="module-bm"><div class="module-bl"><div class="module-br"></div></div></div>
+				</div>
+            </div>
+        	                    <div class="rt-block">
+				<div class="module-content">
+					<div class="module-tm"><div class="module-tl"><div class="module-tr"></div></div></div>
+					<div class="module-l"><div class="module-r">
+	                							<div class="module-inner">
+														<div class="module-inner3">
+									                		<form action="http://www.becs.ac.in/component/comprofiler/login" method="post" id="mod_loginform" class="cbLoginForm" style="margin:0px;">
+Member Login (on invitation)
+<table class="mod_login" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td><input name="username" id="mod_login_username" class="inputbox" size="10" style="background-image:url(http://www.becs.ac.in/modules/mod_cblogin/mod_cblogin/username.png); background-repeat: no-repeat; background-position: 0px 0px; padding-left: 30px; min-height: 18px;width:auto;" title="Username" type="text"><br>
+<span><input name="passwd" id="mod_login_password" class="inputbox" size="10" style="background-image:url(http://www.becs.ac.in/modules/mod_cblogin/mod_cblogin/password.png); background-repeat: no-repeat; background-position: 0px 0px; padding-left: 30px; min-height: 18px;width:auto;" title="Password" type="password"></span><br>
+<input name="op2" value="login" type="hidden">
+<input name="lang" value="english" type="hidden">
+<input name="force_session" value="1" type="hidden">
+<input name="return" value="B:aHR0cDovL3d3dy5iZWNzLmFjLmluL2NzLW1hbmFzLXRlYWNoaW5nLzE4NDAtY3MtbWFuYXMtb3NsYWI=" type="hidden">
+<input name="message" value="0" type="hidden">
+<input name="loginfrom" value="loginmodule" type="hidden">
+<input name="cbsecuritym3" value="cbm_2265b01f_13eb72b4_71776f0aa47f6010c8bff3c4b0339074" type="hidden">
+<input name="j06e009ff8dd684a72e0031d780cded8f" value="1" type="hidden">
+<input name="remember" id="mod_login_remember" value="yes" type="checkbox"> <span id="mod_login_remembermetext"><label for="mod_login_remember">Remember me</label></span><br>
+<span class="cbLoginButtonSpan"><input name="Submit" class="button" value="Login" type="submit"></span></td></tr>
+<tr><td><a href="http://www.becs.ac.in/component/comprofiler/lostpassword" class="mod_login">Forgot login?</a></td></tr>
+<tr><td><a href="http://www.becs.ac.in/component/comprofiler/registers" class="mod_login">Register</a></td></tr>
+</tbody></table></form>							</div>
+						</div>
+					</div></div>
+					<div class="module-bm"><div class="module-bl"><div class="module-br"></div></div></div>
+				</div>
+            </div>
+        	
+                </div>
+            </div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+																							</div></div>
+						</div>
+					</div></div>
+				</div></div>
+			</div>
+		</div></div></div>
+						<div id="rt-main-footer" class="bottom-shadows-dark"><div id="rt-footer-overlay" class="bottom-overlay-lines-4"><div id="rt-main-footer2">
+									<div id="rt-copyright">
+				<div class="rt-container">
+					<div class="rt-grid-12 rt-alpha rt-omega">
+    		<div class="clear"></div>
+		<div class="rt-block">
+			<div id="developed-by">
+PO: Botanic Garden, Dist: Howrah, West Bengal, India - 711103
+			</div>
+			<div id="powered-by"> 
+				Copyright 1995-2013 Bengal Engineering and Science University, Shibpur
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+								</div></div></div>
+							
+
+<div style="position: absolute; top: 0px; left: 0px; visibility: hidden;" class="tooltips-tip-tip"><div></div></div><div style="position: absolute; top: 0px; left: 0px; visibility: hidden;" class="tooltips-img tooltips-tip-tip"><div></div></div><div style="position: absolute; top: 57px; left: 615px; visibility: hidden; opacity: 0;" id="roksearch_results"></div><div class="fusion-js-container header-shadows-dark level1 menutop"><div class="fusion-js-subs"><div style="margin-top: 0px;" class="fusion-submenu-wrapper level2">
+				<div class="drop-top"></div>
+				<ul class="level2">
+								
+							<li class="item531 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992214874" class="orphan item bullet" href="http://www.becs.ac.in/university/vcajoy">
+				<span>
+			    				Vice Chancellor				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item296 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992215258" class="daddy item bullet" href="http://www.becs.ac.in/university/statutory-bodies">
+				<span>
+			    				Statutory Bodies				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item293 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992223712" class="orphan item bullet" href="http://www.becs.ac.in/university/statutorydocuments">
+				<span>
+			    				Statutory Documents				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item386 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992224149" class="orphan item bullet" href="http://www.becs.ac.in/university/besuofficers">
+				<span>
+			    				University Officers				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item313 f-submenu-item">
+					<a tabindex="-1" id="a-13759729922246" class="orphan item bullet" href="http://www.becs.ac.in/university/student-activity">
+				<span>
+			    				Students' Activities Office				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item314 f-submenu-item">
+					<a tabindex="-1" id="a-137597299222599" class="orphan item bullet" href="http://www.becs.ac.in/university/annual-report">
+				<span>
+			    				Annual Report				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item644 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992225536" class="orphan item bullet" href="http://www.becollege.org/" target="_blank">
+				<span>
+			    				Alumni Association				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level3">
+				<div class="drop-top"></div>
+				<ul class="level3">
+								
+							<li class="item399 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992216690" class="orphan item bullet" href="http://www.becs.ac.in/university/statutory-bodies/besuscourt">
+				<span>
+			    				Court				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item400 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992217324" class="orphan item bullet" href="http://www.becs.ac.in/university/statutory-bodies/besusec">
+				<span>
+			    				Executive Council				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item299 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992217783" class="daddy item bullet" href="http://www.becs.ac.in/university/statutory-bodies/faculty-council">
+				<span>
+			    				Faculty Council				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item401 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992221947" class="orphan item bullet" href="http://www.becs.ac.in/university/statutory-bodies/finance-committee">
+				<span>
+			    				Finance Committee				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item402 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992221902" class="orphan item bullet" href="http://www.becs.ac.in/university/statutory-bodies/planningmonitoringboard-">
+				<span>
+			    				Planning &amp; Monitoring Board				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item405 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992222726" class="orphan item bullet" href="http://www.becs.ac.in/university/statutory-bodies/studentswelfaremenu">
+				<span>
+			    				Students’ Welfare Board				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item406 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992223880" class="orphan item bullet" href="http://www.becs.ac.in/university/statutory-bodies/librarycommittee">
+				<span>
+			    				Library Committee				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level4">
+				<div class="drop-top"></div>
+				<ul class="level4">
+								
+							<li class="item385 f-submenu-item">
+					<a tabindex="-1" id="a-137597299221851" class="orphan item bullet" href="http://www.becs.ac.in/university/statutory-bodies/faculty-council/fetcouncilmembers">
+				<span>
+			    				Engineering &amp; Technology				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item397 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992219918" class="orphan item bullet" href="http://www.becs.ac.in/university/statutory-bodies/faculty-council/facultycouncilscience">
+				<span>
+			    				Basic &amp; Applied Sciences				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item398 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992220415" class="orphan item bullet" href="http://www.becs.ac.in/university/statutory-bodies/faculty-council/fcsocial">
+				<span>
+			    				Social &amp; Mgmt. Sciences				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-top: 0px;" class="fusion-submenu-wrapper level2">
+				<div class="drop-top"></div>
+				<ul class="level2">
+								
+							<li class="item160 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992226582" class="daddy item bullet" href="http://www.becs.ac.in/">
+				<span>
+			    				Programme				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item334 f-submenu-item">
+					<a tabindex="-1" id="a-137597299223474" class="orphan item bullet" href="http://www.becs.ac.in/academics/calender">
+				<span>
+			    				Academic Calender				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item161 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992235528" class="daddy item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem">
+				<span>
+			    				Departments				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item162 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992261252" class="daddy item bullet" href="http://www.becs.ac.in/">
+				<span>
+			    				Schools				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item541 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992397271" class="daddy item bullet" href="http://www.becs.ac.in/academics/besuscells">
+				<span>
+			    				Cells				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item163 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992410961" class="daddy item bullet" href="http://www.becs.ac.in/academics/centers">
+				<span>
+			    				Centers				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item164 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992416627" class="orphan item bullet" href="http://www.becs.ac.in/academics/curriculum">
+				<span>
+			    				Curriculum				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item165 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992417971" class="daddy item bullet" href="http://www.becs.ac.in/academics/library">
+				<span>
+			    				Library				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item166 f-submenu-item">
+					<a tabindex="-1" id="a-137597299241954" class="orphan item bullet" href="http://www.becs.ac.in/academics/research">
+				<span>
+			    				Research				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item337 f-submenu-item">
+					<a tabindex="-1" id="a-137597299242014" class="orphan item bullet" href="http://www.becs.ac.in/academics/distinguished-prof">
+				<span>
+			    				Distinguished Professors				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level3">
+				<div class="drop-top"></div>
+				<ul class="level3">
+								
+							<li class="item167 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992227526" class="orphan item bullet" href="http://www.becs.ac.in/academics/programme/ug-programme">
+				<span>
+			    				UG Programme				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item168 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992229362" class="orphan item bullet" href="http://www.becs.ac.in/academics/programme/pg-programme">
+				<span>
+			    				PG Programme				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item169 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992230668" class="orphan item bullet" href="http://www.becs.ac.in/academics/programme/phd-programme">
+				<span>
+			    				PhD Programme				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item725 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992231147" class="orphan item bullet" href="http://www.becs.ac.in/academics/programme/cepsubmenu">
+				<span>
+			    				C.E.P				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item726 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992233816" class="orphan item bullet" href="http://www.becs.ac.in/academics/programme/qipsubmenu">
+				<span>
+			    				Q.I.P				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level3">
+				<div class="drop-top"></div>
+				<ul class="level3">
+								
+							<li class="item2296 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992236321" class="daddy item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/engineeringmenuitem">
+				<span>
+			    				Engineering				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item2297 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992251569" class="daddy item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/sciencedepartmentmenuitem">
+				<span>
+			    				Science				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item2298 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992257486" class="daddy item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/humanitiesdepartmentsmenuitem">
+				<span>
+			    				Humanities				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level4">
+				<div class="drop-top"></div>
+				<ul class="level4">
+								
+							<li class="item170 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992237192" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/engineeringmenuitem/aerospace-engg-a-applied-mechanics">
+				<span>
+			    				Aerospace &amp; App. Mech.				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item171 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992238349" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/engineeringmenuitem/architecture">
+				<span>
+			    				Architecture				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item173 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992240393" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/engineeringmenuitem/civilengineeringmenuitem">
+				<span>
+			    				Civil Engineering				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item174 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992241231" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/engineeringmenuitem/computer-sc-technologyarticle">
+				<span>
+			    				Computer Science				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item175 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992243203" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/engineeringmenuitem/electricalengineeringmenuitem">
+				<span>
+			    				Electrical Engineering				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item176 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992244371" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/engineeringmenuitem/electronics-a-telecommunication">
+				<span>
+			    				Electronics				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item216 f-submenu-item">
+					<a tabindex="-1" id="a-137597299224572" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/engineeringmenuitem/it">
+				<span>
+			    				Information Technology				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item180 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992247651" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/engineeringmenuitem/mechanical">
+				<span>
+			    				Mechanical				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item181 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992248254" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/engineeringmenuitem/metallurgy">
+				<span>
+			    				Metallurgy &amp; Materials				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item182 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992249132" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/engineeringmenuitem/mining">
+				<span>
+			    				Mining				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level4">
+				<div class="drop-top"></div>
+				<ul class="level4">
+								
+							<li class="item172 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992252880" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/sciencedepartmentmenuitem/chemistry">
+				<span>
+			    				Chemistry				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item211 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992253518" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/sciencedepartmentmenuitem/earth-sciences">
+				<span>
+			    				Earth Sciences				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item179 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992255420" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/sciencedepartmentmenuitem/mathematics">
+				<span>
+			    				Mathematics				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item183 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992256697" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/sciencedepartmentmenuitem/physics">
+				<span>
+			    				Physics				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level4">
+				<div class="drop-top"></div>
+				<ul class="level4">
+								
+							<li class="item177 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992259825" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/humanitiesdepartmentsmenuitem/humanities-a-social-scs">
+				<span>
+			    				Humanities				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item178 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992260237" class="orphan item bullet" href="http://www.becs.ac.in/academics/departmentsmainmenuitem/humanitiesdepartmentsmenuitem/hrmmenuitem">
+				<span>
+			    				Human Resource Mgmt.				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level3">
+				<div class="drop-top"></div>
+				<ul class="level3">
+								
+							<li class="item184 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992262497" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/pdsit">
+				<span>
+			    				PDSIT				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item185 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992264164" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/smse">
+				<span>
+			    				SMSE				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item186 parent f-parent-item">
+					<a tabindex="-1" id="a-137597299226559" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/soms">
+				<span>
+			    				SOMS				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item187 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992288630" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/socsat">
+				<span>
+			    				SOCSAT				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item188 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992302526" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sdme">
+				<span>
+			    				SDME				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item189 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992304825" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/seihsm">
+				<span>
+			    				SEIHSM				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item190 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992316768" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/smar">
+				<span>
+			    				SM&amp;R				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item191 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992318157" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/ssoh">
+				<span>
+			    				SSOH				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item192 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992343589" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit">
+				<span>
+			    				SOVLSIT				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level4">
+				<div class="drop-top"></div>
+				<ul class="level4">
+								
+							<li class="item348 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992267983" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/soms/soms-the-course">
+				<span>
+			    				The Course				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item350 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992268862" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/soms/somsfacultynstaff">
+				<span>
+			    				Faculty &amp; Staff				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item345 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992277615" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/soms/soms-research">
+				<span>
+			    				Research				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item347 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992278237" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/soms/soms-committee">
+				<span>
+			    				Committee				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item349 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992280866" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/soms/soms-facilities">
+				<span>
+			    				Facilities				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item449 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992282282" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/soms/somvcsmessage">
+				<span>
+			    				VC's Message				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item450 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992283626" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/soms/somsthe-director">
+				<span>
+			    				The Director				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item451 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992285259" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/soms/somsalumni">
+				<span>
+			    				Alumni				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item452 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992286478" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/soms/somsstudents-achivement">
+				<span>
+			    				Student's Achivement				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level5">
+				<div class="drop-top"></div>
+				<ul class="level5">
+								
+							<li class="item656 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992270278" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/soms/somsfacultynstaff/faculty-members-soms">
+				<span>
+			    				Faculty Members				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item657 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992272288" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/soms/somsfacultynstaff/faculty-from-other-dept-soms">
+				<span>
+			    				Faculty from other Dept.				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item658 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992273307" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/soms/somsfacultynstaff/visiting-faculty-soms">
+				<span>
+			    				Visiting Faculty				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item659 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992275815" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/soms/somsfacultynstaff/staff-soms">
+				<span>
+			    				Staff				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level4">
+				<div class="drop-top"></div>
+				<ul class="level4">
+								
+							<li class="item351 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992290955" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/socsat/socsat-achievements">
+				<span>
+			    				Achievements				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item352 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992291907" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/socsat/socsat-faculty-members">
+				<span>
+			    				Faculty Members				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item353 f-submenu-item">
+					<a tabindex="-1" id="a-137597299229339" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/socsat/socsat-course">
+				<span>
+			    				Courses				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item354 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992294841" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/socsat/socsat-research">
+				<span>
+			    				Research				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item355 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992296598" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/socsat/socsat-an-overview">
+				<span>
+			    				An Overview				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item356 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992298588" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/socsat/socsat-directors-desk">
+				<span>
+			    				Director's Desk				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item357 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992299198" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/socsat/socsat-objectives">
+				<span>
+			    				Objectives				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item358 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992301702" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/socsat/socsat-community-services">
+				<span>
+			    				Community Services				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level4">
+				<div class="drop-top"></div>
+				<ul class="level4">
+								
+							<li class="item415 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992305409" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/seihsm/areas-for-research">
+				<span>
+			    				Areas for Research				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item416 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992307686" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/seihsm/contactus">
+				<span>
+			    				Contact Us				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item417 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992308545" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/seihsm/research-innovations">
+				<span>
+			    				Research Innovations				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item418 f-submenu-item">
+					<a tabindex="-1" id="a-137597299231033" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/seihsm/facilities">
+				<span>
+			    				Facilities				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item419 f-submenu-item">
+					<a tabindex="-1" id="a-137597299231284" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/seihsm/objective-and-scope">
+				<span>
+			    				Objective and Scope				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item420 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992313997" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/seihsm/projectsandresearch">
+				<span>
+			    				Projects and Research				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item421 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992315438" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/seihsm/fundingorganizations">
+				<span>
+			    				Funding Organizations				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level4">
+				<div class="drop-top"></div>
+				<ul class="level4">
+								
+							<li class="item422 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992319675" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/soshintroduction">
+				<span>
+			    				Introduction				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item423 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992321537" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/objective-and-scope">
+				<span>
+			    				Objective and Scope				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item424 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992323445" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/ssohmission-a-vision">
+				<span>
+			    				Mission &amp; Vision				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item425 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992324267" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/ssohfeatures">
+				<span>
+			    				Features				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item426 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992326766" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/way-to-entry">
+				<span>
+			    				Way to entry				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item427 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992327902" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/ssohcourse-structure">
+				<span>
+			    				Course Structure				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item428 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992329941" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/ssohcourse-syllabus">
+				<span>
+			    				Course Syllabus				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item429 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992341640" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/ssohfaculty-members">
+				<span>
+			    				Faculty Members				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level5">
+				<div class="drop-top"></div>
+				<ul class="level5">
+								
+							<li class="item430 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992331207" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/ssohcourse-syllabus/ssohfirst-semester-">
+				<span>
+			    				First Semester :				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item432 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992332286" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/ssohcourse-syllabus/ssohsecond-semester-">
+				<span>
+			    				Second Semester :				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item433 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992334254" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/ssohcourse-syllabus/ssohthirdsemester">
+				<span>
+			    				Third Semester :				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item434 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992336813" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/ssohcourse-syllabus/ssohfourthsemester">
+				<span>
+			    				Fourth Semester :				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item435 f-submenu-item">
+					<a tabindex="-1" id="a-13759729923381000" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/ssohcourse-syllabus/ssohfifth-semester">
+				<span>
+			    				Fifth Semester :				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item436 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992340134" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/ssoh/ssohcourse-syllabus/ssohsixth-semester">
+				<span>
+			    				Sixth Semester :				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level4">
+				<div class="drop-top"></div>
+				<ul class="level4">
+								
+							<li class="item616 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992344144" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/ourhistoryvlsiarticle">
+				<span>
+			    				Our History				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item617 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992346138" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/researchvlsiarticle">
+				<span>
+			    				Research				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item620 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992352217" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/academicsvlsimenu">
+				<span>
+			    				Academics				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item629 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992369694" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/peoplevlsimenu">
+				<span>
+			    				People				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item669 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992390227" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/achievementvlsi">
+				<span>
+			    				Achievements				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item670 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992392966" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/facilities-vlsi">
+				<span>
+			    				Facilities				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level5">
+				<div class="drop-top"></div>
+				<ul class="level5">
+								
+							<li class="item618 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992348543" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/researchvlsiarticle/researchareasvlsiarticle">
+				<span>
+			    				Research Areas				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item619 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992350261" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/researchvlsiarticle/projectvlsimenu">
+				<span>
+			    				Project				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level5">
+				<div class="drop-top"></div>
+				<ul class="level5">
+								
+							<li class="item621 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992354180" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/academicsvlsimenu/coursesofferedvlsimenu">
+				<span>
+			    				Courses Offered				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item622 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992356871" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/academicsvlsimenu/phddetailsvlsimenu">
+				<span>
+			    				Ph D Details				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item624 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992359893" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/academicsvlsimenu/publicationvlsimenu">
+				<span>
+			    				Publication				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item625 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992367973" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/academicsvlsimenu/coursedetailsvlsimenu">
+				<span>
+			    				Course Details				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level6">
+				<div class="drop-top"></div>
+				<ul class="level6">
+								
+							<li class="item623 f-submenu-item">
+					<a tabindex="-1" id="a-137597299235891" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/academicsvlsimenu/phddetailsvlsimenu/phdstudentsvlsimenu">
+				<span>
+			    				Ph D Students				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level6">
+				<div class="drop-top"></div>
+				<ul class="level6">
+								
+							<li class="item626 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992361670" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/academicsvlsimenu/publicationvlsimenu/2006-2007pubvlsimenu">
+				<span>
+			    				2006-2007				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item627 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992363749" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/academicsvlsimenu/publicationvlsimenu/2007-2008pubvlsimenu">
+				<span>
+			    				2007-2008				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item628 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992365873" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/academicsvlsimenu/publicationvlsimenu/2008-2009puvvlsimenu">
+				<span>
+			    				2008-2009(till date)				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level5">
+				<div class="drop-top"></div>
+				<ul class="level5">
+								
+							<li class="item630 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992371582" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/peoplevlsimenu/directorvlsimenu">
+				<span>
+			    				Director				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item639 f-submenu-item">
+					<a tabindex="-1" id="a-137597299237253" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/peoplevlsimenu/facultymembersvlsi">
+				<span>
+			    				Faculty Members				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item661 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992375700" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/peoplevlsimenu/staff-vlsi">
+				<span>
+			    				Staff				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item662 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992377850" class="daddy item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/peoplevlsimenu/students-vlsi">
+				<span>
+			    				Students				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level6">
+				<div class="drop-top"></div>
+				<ul class="level6">
+								
+							<li class="item663 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992379188" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/peoplevlsimenu/students-vlsi/2006yearbatch-vlsi">
+				<span>
+			    				2006				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item664 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992381491" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/peoplevlsimenu/students-vlsi/2007yearbatch-vlsi">
+				<span>
+			    				2007				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item665 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992383920" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/peoplevlsimenu/students-vlsi/2008yearbatch-vlsi">
+				<span>
+			    				2008				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item666 f-submenu-item">
+					<a tabindex="-1" id="a-137597299238592" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/peoplevlsimenu/students-vlsi/2009yearbatch-vlsi">
+				<span>
+			    				2009				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item667 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992386106" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/peoplevlsimenu/students-vlsi/2010yearbatch-vlsi">
+				<span>
+			    				2010				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item668 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992388167" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/peoplevlsimenu/students-vlsi/2011yearbatch-vlsi">
+				<span>
+			    				2011				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level5">
+				<div class="drop-top"></div>
+				<ul class="level5">
+								
+							<li class="item671 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992394381" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/facilities-vlsi/laboratories-vlsi">
+				<span>
+			    				Laboratories				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item672 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992395890" class="orphan item bullet" href="http://www.becs.ac.in/academics/schools/sovlsit/facilities-vlsi/eda-tools-vlsi">
+				<span>
+			    				EDA Tools				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level3">
+				<div class="drop-top"></div>
+				<ul class="level3">
+								
+							<li class="item551 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992398176" class="daddy item bullet" href="http://www.becs.ac.in/academics/besuscells/raccmainmenuitem">
+				<span>
+			    				Research and Consultancy				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item542 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992408703" class="orphan item bullet" href="http://www.becs.ac.in/edc/" target="_blank">
+				<span>
+			    				Entrepreneurship				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item2331 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992409236" class="orphan item bullet" href="http://www.becs.ac.in/academics/besuscells/careercounsellingcellmenuitem">
+				<span>
+			    				Career Counselling				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level4">
+				<div class="drop-top"></div>
+				<ul class="level4">
+								
+							<li class="item724 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992399215" class="orphan item bullet" href="http://www.becs.ac.in/academics/besuscells/raccmainmenuitem/cepsubmenu">
+				<span>
+			    				C.E.P				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item723 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992401853" class="orphan item bullet" href="http://www.becs.ac.in/academics/besuscells/raccmainmenuitem/qipsubmenu">
+				<span>
+			    				Q.I.P				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item552 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992402805" class="orphan item bullet" href="http://www.becs.ac.in/academics/besuscells/raccmainmenuitem/raccofficemainmenuitem">
+				<span>
+			    				Office				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item2494 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992403848" class="orphan item bullet" href="http://www.becs.ac.in/academics/besuscells/raccmainmenuitem/projects">
+				<span>
+			    				Projects				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item2495 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992404886" class="orphan item bullet" href="http://www.becs.ac.in/academics/besuscells/raccmainmenuitem/drc-forms">
+				<span>
+			    				DRC Forms				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item2912 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992406959" class="orphan item bullet" href="http://www.becs.ac.in/academics/besuscells/raccmainmenuitem/iipc-submenu-drc">
+				<span>
+			    				IIP Cell				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item2913 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992407921" class="orphan item bullet" href="http://www.becs.ac.in/academics/besuscells/raccmainmenuitem/contactus-submenudrc">
+				<span>
+			    				Contact Us				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level3">
+				<div class="drop-top"></div>
+				<ul class="level3">
+								
+							<li class="item225 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992411134" class="orphan item bullet" href="http://www.becs.ac.in/academics/centers/computer-center">
+				<span>
+			    				Computer Center				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item226 f-submenu-item">
+					<a tabindex="-1" id="a-137597299241284" class="orphan item bullet" href="http://www.becs.ac.in/academics/centers/video-conferencing-facility">
+				<span>
+			    				Facility of Video Conference				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item233 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992413876" class="orphan item bullet" href="http://www.becs.ac.in/academics/centers/greenenergycentre">
+				<span>
+			    				Green Energy				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item230 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992414805" class="orphan item bullet" href="http://www.becs.ac.in/academics/centers/healthcare-sc-tech">
+				<span>
+			    				Health Care Sc. &amp; Tech.				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level3">
+				<div class="drop-top"></div>
+				<ul class="level3">
+								
+							<li class="item205 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992418925" class="orphan item bullet" href="http://library.becs.ac.in:30000/webpage2/DQPAS-PAGE1.html" target="_blank">
+				<span>
+			    				DQPAS				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-top: 0px;" class="fusion-submenu-wrapper level2">
+				<div class="drop-top"></div>
+				<ul class="level2">
+								
+							<li class="item139 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992421806" class="orphan item bullet" href="http://www.becs.ac.in/admissionmainmenuitem/ug-admission">
+				<span>
+			    				Bachelor of Engineering				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item140 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992421898" class="orphan item bullet" href="http://www.becs.ac.in/admissionmainmenuitem/memtechmtrpadmissionmainmenuitem">
+				<span>
+			    				M.E./M.Tech./M.T.R.P.				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item246 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992422468" class="orphan item bullet" href="http://www.becs.ac.in/admissionmainmenuitem/msc-admissionmenuitem">
+				<span>
+			    				Master of Science				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item242 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992422886" class="orphan item bullet" href="http://www.becs.ac.in/admissionmainmenuitem/mba-admission">
+				<span>
+			    				MBA				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item141 f-submenu-item">
+					<a tabindex="-1" id="a-137597299242275" class="orphan item bullet" href="http://www.becs.ac.in/admissionmainmenuitem/phd">
+				<span>
+			    				PhD				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item548 f-submenu-item">
+					<a tabindex="-1" id="a-137597299242329" class="orphan item bullet" href="http://www.becs.ac.in/admissionmainmenuitem/admissionnoticationmenuitem">
+				<span>
+			    				Notification				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-top: 0px;" class="fusion-submenu-wrapper level2">
+				<div class="drop-top"></div>
+				<ul class="level2">
+								
+							<li class="item648 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992424782" class="orphan item bullet" href="http://www.becs.ac.in/notice/generalnoticesmenu">
+				<span>
+			    				General Notices				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item383 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992424676" class="orphan item bullet" href="http://www.becs.ac.in/notice/admissionnotices">
+				<span>
+			    				Admission Notices				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item144 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992425963" class="orphan item bullet" href="http://www.becs.ac.in/notice/employmentnotices">
+				<span>
+			    				Employment Notices				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item158 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992425196" class="orphan item bullet" href="http://www.becs.ac.in/notice/studentnotices">
+				<span>
+			    				Student Notices				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item143 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992425122" class="orphan item bullet" href="http://www.becs.ac.in/notice/tendernotices">
+				<span>
+			    				Tender Notices				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-top: 0px;" class="fusion-submenu-wrapper level2">
+				<div class="drop-top"></div>
+				<ul class="level2">
+								
+							<li class="item2403 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992426139" class="orphan item bullet" href="http://www.becs.ac.in/download/election2012">
+				<span>
+			    				Election 2012				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item521 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992427423" class="orphan item bullet" href="http://www.becs.ac.in/download/statutorydocumentsdownload">
+				<span>
+			    				Statutory Documents				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item390 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992427504" class="orphan item bullet" href="http://www.becs.ac.in/download/mandatorydisclosure">
+				<span>
+			    				Mandatory Disclosure				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item2381 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992427238" class="orphan item bullet" href="http://www.becs.ac.in/download/calendarsyllabimainmenuitem">
+				<span>
+			    				Calendar/Syllabi				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item391 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992428559" class="orphan item bullet" href="http://www.becs.ac.in/download/forms">
+				<span>
+			    				Forms				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item392 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992428876" class="orphan item bullet" href="http://www.becs.ac.in/download/officeorders">
+				<span>
+			    				Office Orders				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item393 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992429198" class="orphan item bullet" href="http://www.becs.ac.in/download/government-orders">
+				<span>
+			    				Government Orders				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item394 parent f-parent-item">
+					<a tabindex="-1" id="a-1375972992429438" class="daddy item bullet" href="http://www.becs.ac.in/download/admissionforms">
+				<span>
+			    				Admission Documents				   
+				</span>
+			</a>
+			
+					
+			
+	</li>	
+									
+							<li class="item395 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992433416" class="orphan item bullet" href="http://www.becs.ac.in/index.php?Itemid=395&amp;option=">
+				<span>
+			    				Employment				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div><div class="fusion-js-subs"><div style="margin-left: 0px;" class="fusion-submenu-wrapper level3">
+				<div class="drop-top"></div>
+				<ul class="level3">
+								
+							<li class="item528 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992430839" class="orphan item bullet" href="http://www.becs.ac.in/download/admissionforms/beadmissiondocuments">
+				<span>
+			    				B.E. Admission Documents				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item529 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992430418" class="orphan item bullet" href="http://www.becs.ac.in/download/admissionforms/memarch2011">
+				<span>
+			    				ME/MArch Documents				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item530 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992431893" class="orphan item bullet" href="http://www.becs.ac.in/download/admissionforms/msc2011">
+				<span>
+			    				MSc Admission Documents				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item2485 f-submenu-item">
+					<a tabindex="-1" id="a-137597299243124" class="orphan item bullet" href="http://www.becs.ac.in/download/admissionforms/phdenrolmentenggdocuments">
+				<span>
+			    				PhD Enrolment (Engg)				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item2953 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992432390" class="orphan item bullet" href="http://www.becs.ac.in/download/admissionforms/phdenrolmentsciencedocuments">
+				<span>
+			    				PhD Enrolment (Science)				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item2954 f-submenu-item">
+					<a tabindex="-1" id="a-1375972992432843" class="orphan item bullet" href="http://www.becs.ac.in/download/admissionforms/phdenrolmentscmtdocuments">
+				<span>
+			    				PhD Enrolment (Mgmt)				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div></div></div></body></html>

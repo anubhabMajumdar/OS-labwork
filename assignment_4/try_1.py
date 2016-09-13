@@ -1,0 +1,112 @@
+import os
+
+def run():
+	#print("anubhab>",end='')
+	#inp=input()
+	inp=""
+	while(inp!="exit"):
+		print("anubhab>",end='')
+		inp=input()
+		parse_input(inp)
+	#test('osfile1')
+							
+def parse_input(inp):
+	l=inp.split()
+	try:
+		if (l[0]=='mkfs'):
+			print('File being created....\nName :',l[1],'\nSize :',l[3])
+			create_file(l[1],l[2],l[3])
+			print("File successfully created")
+		elif (l[0]=='use'):
+			rename_drive(l[1],l[2])
+			print("Done\n")
+		elif (l[0]=='test'):
+			test(l[1])	
+		elif (l[0]=='cp'):
+			file_copy(l[1],l[2])	
+				
+	except:
+		pass
+
+def create_file(name,blocksize,size):
+	f=open(name,'w+')
+	size_file=0
+	size_file=int(size[0:len(size)-2])
+	if size[-2]=='K':
+		size_file=size_file*1024
+		
+	elif size[-2]=='M':
+		size_file=size_file*1048576
+		
+	for i in range(size_file):
+		f.write('\0')
+	
+	f.close()
+	
+	g=open(name,'r+')	
+	g.seek(0,0)
+	#file-name + blocksize + file-size + number_of_files	
+	new_name=name+" "+blocksize+" "+size+" " + '0' + "\n"
+	g.write(new_name)
+	f.close()
+
+def rename_drive(name,drive_name):
+
+	g=open(name,'r+')	
+	g.seek(0,0)
+	line=g.readline()
+	items=line.split()
+	items[0]=drive_name
+	
+	g.seek(0,0)
+	new_name=items[0]+" "+items[1]+" "+items[2]+" "+items[3]+"\n"
+	g.write(new_name)
+	g.close()
+	
+	l=os.listdir(".")
+	for filename in l:
+		if filename==name:
+			os.rename(filename,drive_name)
+			
+
+def file_copy(source,destinantion):
+	size_source=os.path.getsize(source)
+	l=destinantion.split(":")
+	file_to_open=l[0]+":"
+	f=open(file_to_open)
+	first_line=f.readline()
+	print(first_line)
+	first_line=first_line.split()
+	
+	dest_name=first_line[0]
+	#print(dest_name)
+	blocksize=int(first_line[1])
+	#print(blocksize)
+	size=first_line[2]
+	size_file=int(size[0:len(size)-2])
+	#print(size_file)
+	no_of_files=int(first_line[3])
+	#print(no_of_files)
+	
+	no_of_files+=1
+	
+	
+	
+
+
+
+
+
+
+
+
+def test(name):
+	
+	f=open(name,'r')
+	print(f.readline(),"\n")
+	print(f.readline(),"\n")
+	f.close()
+	
+	
+run()
+#test('entertainment:')
